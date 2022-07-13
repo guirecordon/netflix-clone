@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer p {
+  line-height: 1.6;
+}

@@ -1,0 +1,34 @@
+.header {
+  height: 70px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: ;
+  transition: 0.5s;
+}
+
+.superimpose {
+  background: #141414;
+}
+
+.logo {
+  width: 7.25rem;
+}
+
+.userAvatar {
+  width: 36px;
+}
+
+.header img {
+  width: 100%;
+}
+
+.userAvatarImg {
+  border-radius: 4px;
+}
