@@ -26,3 +26,38 @@
   transform: scale(1);
   cursor: pointer;
 }
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.arrowLeft {
+  left: 0;
+}
+
+.arrowRight {
+  right: 0;
+}
+
+.movieRow:hover .arrowRight,
+.movieRow:hover .arrowLeft {
+  opacity: 1;
+}
+
+@media (max-width: 40rem) {
+  .arrowLeft,
+  .arrowRight {
+    opacity: 1;
+  }
+}

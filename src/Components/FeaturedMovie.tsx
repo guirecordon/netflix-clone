@@ -23,7 +23,10 @@ export function FeaturedMovie({item}) {
             <div className={styles.year}>{firstDate.getFullYear()}</div>
             <div className={styles.seasons}>{item.number_of_seasons} season{item.number_of_seasons > 1 ? 's' : ''}</div>
           </div>
-          <div className={styles.description}>{item.overview}</div>
+          <div className={styles.description}>
+            {item.overview.length > 250 && item.overview.substring(0, 250)+"..."}
+            {/* {item.overview.length > 250 && <span style={{cursor: 'pointer'}}>...</span>} */}
+          </div>
           <div className={styles.buttons}>
             <a className={styles.watchBtn} href="">Watch</a>
             <a className={styles.mylistBtn} href="">+ My List</a>
